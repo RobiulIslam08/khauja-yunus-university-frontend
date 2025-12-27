@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* v4 থিম কনফিগারেশন */
+@theme {
+  /* 1. Animation নাম ডিক্লেয়ার করা */
+  --animate-scroll: scroll 20s linear infinite;
+
+  /* 2. Keyframes ডিফাইন করা */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* 3. Pause Utility (হোভার করলে থামার জন্য) */
+/* v4 এ কাস্টম ক্লাস বা ইউটিলিটি এভাবে লেখা যায় */
+.hover\:pause:hover {
+  animation-play-state: paused;
+}
