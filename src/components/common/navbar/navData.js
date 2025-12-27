@@ -69,6 +69,44 @@ export const STUDENTS_ITEMS = [
   { label: "Degree Verification", path: "/degree-verification" },
 ];
 
+export const ACADEMIC_DROPDOWN_ITEMS = [
+  {
+    label: "School of Science & Engineering",
+    path: "#",
+    submenu: [
+      { label: "Computer Science & Engineering (CSE)", path: "/academic/cse" },
+      { label: "Electrical & Electronic Engineering (EEE)", path: "/academic/eee" },
+      { label: "Textile Engineering", path: "/academic/textile" },
+      { label: "Medical Physics", path: "/academic/medical-physics" },
+      { label: "Mechatronics & Micro-Mechatronics", path: "/academic/mechatronics" },
+    ],
+  },
+  {
+    label: "School of Biomedical Sciences",
+    path: "#",
+    submenu: [
+      { label: "Biochemistry & Biotechnology", path: "/academic/bmb" },
+      { label: "Microbiology", path: "/academic/microbiology" },
+      { label: "Pharmacy", path: "/academic/pharmacy" },
+    ],
+  },
+  {
+    label: "School of Business",
+    path: "#",
+    submenu: [
+      { label: "Management Information System (MIS)", path: "/academic/mis" },
+      { label: "Business Administration", path: "/academic/business-admin" },
+    ],
+  },
+  {
+    label: "School of Arts & Social Science",
+    path: "#",
+    submenu: [
+      { label: "English", path: "/academic/english" },
+      { label: "Law", path: "/academic/law" },
+    ],
+  },
+];
 export const MAIN_NAV_ITEMS = [
   { label: "HOME", path: "/" },
   { label: "ABOUT", type: "dropdown", items: ABOUT_DROPDOWN_ITEMS },
@@ -77,7 +115,7 @@ export const MAIN_NAV_ITEMS = [
   { label: "OFFICES", type: "dropdown", items: OFFICES_ITEMS },
   { label: "PEOPLE", type: "dropdown", items: PEOPLE_ITEMS },
   { label: "STUDENTS", type: "dropdown", items: STUDENTS_ITEMS },
-  { label: "ACADEMIC", path: "/academic" },
+  { label: "ACADEMIC",  path: "/academic" },
   { label: "CONTACT US", path: "/contact" },
   { label: "RESULT", path: "/result" },
 ];

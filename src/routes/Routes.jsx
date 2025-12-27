@@ -59,6 +59,8 @@ import Result from "../pages/Result";
 
 import Notices from "../pages/Notices";
 import ErrorPage from "../pages/ErrorPage";
+import Contact from "../pages/Contact";
+
 
 export const router = createBrowserRouter([
   {
@@ -70,6 +72,8 @@ export const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
+
+      {path:"contact", element:<Contact/>},
       // ABOUT
       { path: "history", element: <History /> },
       { path: "mission-vision", element: <MissionVision /> },
