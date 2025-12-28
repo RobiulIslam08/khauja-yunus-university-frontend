@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MAIN_NAV_ITEMS, TOP_LINKS } from "./navData";
 
-function MobileDropdown({ label, items }) {
+function MobileDropdown({ label, items, closeMenu }) {
 	const [open, setOpen] = useState(false);
 	const [subOpen, setSubOpen] = useState(null);
 	return (
@@ -35,7 +35,11 @@ function MobileDropdown({ label, items }) {
 												key={subIdx}
 												to={sub.path}
 												className="block py-2 text-gray-300 text-xs font-medium hover:text-green-600 transition duration-200"
-												onClick={() => setOpen(false)}
+												onClick={() => {
+													setOpen(false);
+													setSubOpen(null);
+													if (closeMenu) closeMenu();
+												}}
 											>
 												{sub.label}
 											</Link>
@@ -47,7 +51,11 @@ function MobileDropdown({ label, items }) {
 							<Link
 								key={idx}
 								to={item.path}
-								onClick={() => setOpen(false)}
+								onClick={() => {
+									setOpen(false);
+									setSubOpen(null);
+									if (closeMenu) closeMenu();
+								}}
 								className="block py-2 text-gray-200 text-sm font-medium hover:text-green-600 transition duration-200"
 							>
 								{item.label}
@@ -67,7 +75,7 @@ export default function MobileMenu({ isOpen, closeMenu }) {
 			<div className="flex flex-col px-4 py-3">
 				{MAIN_NAV_ITEMS.map((item) =>
 					item.type === "dropdown" ? (
-						<MobileDropdown key={item.label} label={item.label} items={item.items} />
+						<MobileDropdown key={item.label} label={item.label} items={item.items} closeMenu={closeMenu} />
 					) : (
 						<Link
 							key={item.label}

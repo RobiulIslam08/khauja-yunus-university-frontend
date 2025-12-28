@@ -153,11 +153,11 @@ export const MAIN_NAV_ITEMS = [
   { label: "HOME", path: "/" },
   { label: "ABOUT", type: "dropdown", items: ABOUT_DROPDOWN_ITEMS },
   { label: "ADMISSION", type: "dropdown", items: ADMISSION_DROPDOWN_ITEMS },
+  { label: "ACADEMIC",  type:"dropdown", items:ACADEMIC_DROPDOWN_ITEMS },
   { label: "AUTHORITIES", type: "dropdown", items: AUTHORITIES_ITEMS },
   { label: "OFFICES", type: "dropdown", items: OFFICES_ITEMS },
   { label: "PEOPLE", type: "dropdown", items: PEOPLE_ITEMS },
   { label: "STUDENTS", type: "dropdown", items: STUDENTS_ITEMS },
-  { label: "ACADEMIC",  type:"dropdown", items:ACADEMIC_DROPDOWN_ITEMS },
   { label: "CONTACT US", path: "/contact" },
   { label: "RESULT", path: "/result" },
 ];
