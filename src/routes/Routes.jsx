@@ -1,6 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import HomePage from "../pages/HomePage/HomePage";
+import AcademicPolicy from "../pages/AcademicPolicy";
+import ScienceEngineering from "../pages/faculty/ScienceEngineering";
+import Business from "../pages/faculty/Business";
+import BioMedical from "../pages/faculty/BioMedical";
+import Law from "../pages/faculty/Law";
+import HumanScience from "../pages/faculty/HumanScience";
 import MainLayout from "../components/layout/MainLayout";
 // ABOUT
 import History from "../pages/About/History";
@@ -73,7 +79,7 @@ export const router = createBrowserRouter([
         element: <HomePage />,
       },
 
-      {path:"contact", element:<Contact/>},
+      { path: "contact", element: <Contact /> },
       // ABOUT
       { path: "history", element: <History /> },
       { path: "mission-vision", element: <MissionVision /> },
@@ -128,6 +134,13 @@ export const router = createBrowserRouter([
       { path: "help-desk", element: <HelpDesk /> },
       { path: "notices", element: <Notices /> },
       { path: "result", element: <Result /> },
+      // ACADEMIC INFO & FACULTY
+      { path: "academic/policy", element: <AcademicPolicy /> },
+      { path: "faculty/science-engineering", element: <ScienceEngineering /> },
+      { path: "faculty/business", element: <Business /> },
+      { path: "faculty/bio-medical", element: <BioMedical /> },
+      { path: "faculty/law", element: <Law /> },
+      { path: "faculty/human-science", element: <HumanScience /> },
     ],
   },
 ]);

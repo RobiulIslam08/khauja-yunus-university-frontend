@@ -70,40 +70,82 @@ export const STUDENTS_ITEMS = [
 ];
 
 export const ACADEMIC_DROPDOWN_ITEMS = [
+  // ১. Academic Info
   {
-    label: "School of Science & Engineering",
+    label: "Academic Info",
     path: "#",
     submenu: [
-      { label: "Computer Science & Engineering (CSE)", path: "/academic/cse" },
-      { label: "Electrical & Electronic Engineering (EEE)", path: "/academic/eee" },
-      { label: "Textile Engineering", path: "/academic/textile" },
-      { label: "Medical Physics", path: "/academic/medical-physics" },
-      { label: "Mechatronics & Micro-Mechatronics", path: "/academic/mechatronics" },
+      { label: "Academic Policy", path: "/academic/policy" },
     ],
   },
+  // ২. Faculty (অনুষদসমূহ)
   {
-    label: "School of Biomedical Sciences",
+    label: "Faculty",
     path: "#",
     submenu: [
-      { label: "Biochemistry & Biotechnology", path: "/academic/bmb" },
-      { label: "Microbiology", path: "/academic/microbiology" },
-      { label: "Pharmacy", path: "/academic/pharmacy" },
+      { label: "Science and Engineering", path: "/faculty/science-engineering" },
+      { label: "Business", path: "/faculty/business" },
+      { label: "Bio-medical Science", path: "/faculty/bio-medical" },
+      { label: "Law", path: "/faculty/law" },
+      { label: "Human Science", path: "/faculty/human-science" },
     ],
   },
+  // ৩. Departments (বিভাগসমূহ - সব একসাথে)
   {
-    label: "School of Business",
+    label: "Departments",
     path: "#",
     submenu: [
-      { label: "Management Information System (MIS)", path: "/academic/mis" },
-      { label: "Business Administration", path: "/academic/business-admin" },
+      { label: "Biochemistry and Biotechnology", path: "/dept/bmb" },
+      { label: "Business Administration", path: "/dept/dba" },
+      { label: "Computer Science & Engineering", path: "/dept/cse" },
+      { label: "Information and Communication Technology (ICT)", path: "/dept/ict" },
+      { label: "Electrical & Electronics Engineering", path: "/dept/eee" },
+      { label: "English", path: "/dept/english" },
+      { label: "Islamic Studies", path: "/dept/islamic-studies" },
+      { label: "Law", path: "/dept/law" },
+      { label: "Library and Information Science", path: "/dept/lis" },
+      { label: "Mechatronics and Micromechatronics Engineering", path: "/dept/mme" },
+      { label: "Medical Physics", path: "/dept/medical-physics" },
+      { label: "Microbiology", path: "/dept/microbiology" },
+      { label: "Pharmacy", path: "/dept/pharmacy" },
     ],
   },
+  // ৪. Undergraduate Programs
   {
-    label: "School of Arts & Social Science",
+    label: "Undergraduate Programs",
     path: "#",
     submenu: [
-      { label: "English", path: "/academic/english" },
-      { label: "Law", path: "/academic/law" },
+      { label: "B.Sc. in Computer Science & Engineering", path: "/program/bsc-cse" },
+      { label: "B.Sc. in Information and Communications Technology", path: "/program/bsc-ict" },
+      { label: "B.Sc. in Mechatronics and Micromechatronics", path: "/program/bsc-mme" },
+      { label: "Electronics and Telecommunication Engineering", path: "/program/ete" },
+      { label: "B.Sc. in Pharmacy", path: "/program/bpharm" },
+      { label: "Bachelor of Business Administration (BBA)", path: "/program/bba" },
+      { label: "B.Sc. in Electrical & Electronics Engineering", path: "/program/bsc-eee" },
+      { label: "B.A. (Hons.) in English", path: "/program/ba-english" },
+      { label: "B.Sc. in Microbiology", path: "/program/bsc-microbiology" },
+      { label: "B.Sc. in Biochemistry & Biotechnology", path: "/program/bsc-bmb" },
+      { label: "Bachelor of Laws (LL.B)", path: "/program/llb" },
+    ],
+  },
+  // ৫. Graduate Programs
+  {
+    label: "Graduate Programs",
+    path: "#",
+    submenu: [
+      { label: "Master of Business Administration (MBA)", path: "/program/mba" },
+      { label: "M.Sc. in Mechatronic and Micro-Mechatronics", path: "/program/msc-mme" },
+      { label: "Master of Laws (LL.M)", path: "/program/llm" },
+      { label: "M.A. in English ELT", path: "/program/ma-english" },
+      { label: "M.A. in Islamic Studies (Preli)", path: "/program/ma-islamic-studies" },
+    ],
+  },
+  // ৬. Post Graduate Diploma
+  {
+    label: "Post Graduate Diploma",
+    path: "#",
+    submenu: [
+      { label: "PGD in Library and Information Science", path: "/program/pgd-lis" },
     ],
   },
 ];
@@ -115,7 +157,7 @@ export const MAIN_NAV_ITEMS = [
   { label: "OFFICES", type: "dropdown", items: OFFICES_ITEMS },
   { label: "PEOPLE", type: "dropdown", items: PEOPLE_ITEMS },
   { label: "STUDENTS", type: "dropdown", items: STUDENTS_ITEMS },
-  { label: "ACADEMIC",  path: "/academic" },
+  { label: "ACADEMIC",  type:"dropdown", items:ACADEMIC_DROPDOWN_ITEMS },
   { label: "CONTACT US", path: "/contact" },
   { label: "RESULT", path: "/result" },
 ];
