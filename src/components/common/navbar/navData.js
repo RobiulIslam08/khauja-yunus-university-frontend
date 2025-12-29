@@ -74,16 +74,17 @@ export const ACADEMIC_DROPDOWN_ITEMS = [
   {
     label: "Academic Info",
     path: "#",
-    submenu: [
-      { label: "Academic Policy", path: "/academic/policy" },
-    ],
+    submenu: [{ label: "Academic Policy", path: "/academic/policy" }],
   },
   // ২. Faculty (অনুষদসমূহ)
   {
     label: "Faculty",
     path: "#",
     submenu: [
-      { label: "Science and Engineering", path: "/faculty/science-engineering" },
+      {
+        label: "Science and Engineering",
+        path: "/faculty/science-engineering",
+      },
       { label: "Business", path: "/faculty/business" },
       { label: "Bio-medical Science", path: "/faculty/bio-medical" },
       { label: "Law", path: "/faculty/law" },
@@ -95,19 +96,40 @@ export const ACADEMIC_DROPDOWN_ITEMS = [
     label: "Departments",
     path: "#",
     submenu: [
-      { label: "Biochemistry and Biotechnology", path: "/dept/bmb" },
-      { label: "Business Administration", path: "/dept/dba" },
-      { label: "Computer Science & Engineering", path: "/dept/cse" },
-      { label: "Information and Communication Technology (ICT)", path: "/dept/ict" },
-      { label: "Electrical & Electronics Engineering", path: "/dept/eee" },
-      { label: "English", path: "/dept/english" },
-      { label: "Islamic Studies", path: "/dept/islamic-studies" },
-      { label: "Law", path: "/dept/law" },
-      { label: "Library and Information Science", path: "/dept/lis" },
-      { label: "Mechatronics and Micromechatronics Engineering", path: "/dept/mme" },
-      { label: "Medical Physics", path: "/dept/medical-physics" },
-      { label: "Microbiology", path: "/dept/microbiology" },
-      { label: "Pharmacy", path: "/dept/pharmacy" },
+      {
+        label: "Biochemistry and Biotechnology",
+        path: "/academic/biochemistry-biotechnology",
+      },
+      {
+        label: "Business Administration",
+        path: "/academic/business-administration",
+      },
+      {
+        label: "Computer Science & Engineering",
+        path: "/academic/computer-science-engineering",
+      },
+      {
+        label: "Information and Communication Technology (ICT)",
+        path: "/academic/information-communication-technology",
+      },
+      {
+        label: "Electrical & Electronics Engineering",
+        path: "/academic/electrical-electronics-engineering",
+      },
+      { label: "English", path: "/academic/english" },
+      { label: "Islamic Studies", path: "/academic/islamic-studies" },
+      { label: "Law", path: "/academic/law" },
+      {
+        label: "Library and Information Science",
+        path: "/academic/library-information-science",
+      },
+      {
+        label: "Mechatronics and Micromechatronics Engineering",
+        path: "/academic/mechatronics-micromechatronics-engineering",
+      },
+      { label: "Medical Physics", path: "/academic/medical-physics" },
+      { label: "Microbiology", path: "/academic/microbiology" },
+      { label: "Pharmacy", path: "/academic/pharmacy" },
     ],
   },
   // ৪. Undergraduate Programs
@@ -115,17 +137,39 @@ export const ACADEMIC_DROPDOWN_ITEMS = [
     label: "Undergraduate Programs",
     path: "#",
     submenu: [
-      { label: "B.Sc. in Computer Science & Engineering", path: "/program/bsc-cse" },
-      { label: "B.Sc. in Information and Communications Technology", path: "/program/bsc-ict" },
-      { label: "B.Sc. in Mechatronics and Micromechatronics", path: "/program/bsc-mme" },
-      { label: "Electronics and Telecommunication Engineering", path: "/program/ete" },
-      { label: "B.Sc. in Pharmacy", path: "/program/bpharm" },
-      { label: "Bachelor of Business Administration (BBA)", path: "/program/bba" },
-      { label: "B.Sc. in Electrical & Electronics Engineering", path: "/program/bsc-eee" },
-      { label: "B.A. (Hons.) in English", path: "/program/ba-english" },
-      { label: "B.Sc. in Microbiology", path: "/program/bsc-microbiology" },
-      { label: "B.Sc. in Biochemistry & Biotechnology", path: "/program/bsc-bmb" },
-      { label: "Bachelor of Laws (LL.B)", path: "/program/llb" },
+      {
+        label: "B.Sc. in Computer Science & Engineering",
+        path: "/academic/computer-science-engineering/bachelor-of-cse",
+      },
+      {
+        label: "B.Sc. in Information and Communications Technology",
+        path: "/academic/information-communication-technology/bsc-in-ict",
+      },
+      {
+        label: "B.Sc. in Mechatronics and Micromechatronics",
+        path: "/academic/mechatronics-micromechatronics-engineering/bsc-in-mme",
+      },
+     
+      {
+        label: "Electronics and Telecommunication Engineering",
+        path: "/academic/electronics-telecommunication-engineering/bsc-in-ete",
+      },
+      { label: "B.Sc. in Pharmacy", path: "/academic/pharmacy/bsc-in-pharmacy" },
+      {
+        label: "Bachelor of Business Administration (BBA)",
+        path: "/academic/business-administration/bba",
+      },
+      {
+        label: "B.Sc. in Electrical & Electronics Engineering",
+        path: "/academic/electrical-electronics-engineering/bsc-in-eee",
+      },
+      { label: "B.A. (Hons.) in English", path: "/academic/english/ba-english" },
+      { label: "B.Sc. in Microbiology", path: "/academic/microbiology/bsc-in-microbiology" },
+      {
+        label: "B.Sc. in Biochemistry & Biotechnology",
+        path: "/academic/biochemistry-biotechnology/bsc-in-bcbt",
+      },
+      { label: "Bachelor of Laws (LL.B)", path: "/academic/law/llb" },
     ],
   },
   // ৫. Graduate Programs
@@ -133,11 +177,20 @@ export const ACADEMIC_DROPDOWN_ITEMS = [
     label: "Graduate Programs",
     path: "#",
     submenu: [
-      { label: "Master of Business Administration (MBA)", path: "/program/mba" },
-      { label: "M.Sc. in Mechatronic and Micro-Mechatronics", path: "/program/msc-mme" },
-      { label: "Master of Laws (LL.M)", path: "/program/llm" },
-      { label: "M.A. in English ELT", path: "/program/ma-english" },
-      { label: "M.A. in Islamic Studies (Preli)", path: "/program/ma-islamic-studies" },
+      {
+        label: "Master of Business Administration (MBA)",
+        path: "/academic/business-administration/mba",
+      },
+      {
+        label: "M.Sc. in Mechatronic and Micro-Mechatronics",
+    path: "/academic/mechatronics-micromechatronics-engineering/msc-in-mme",
+      },
+      { label: "Master of Laws (LL.M)", path: "/academic/law/llm" },
+      { label: "M.A. in English ELT", path: "/academic/english/ma-english" },
+      {
+        label: "Master of Arts in Islamic Studies (Preli)",
+        path: "/academic/islamic-studies/MA-IS-Preli",
+      },
     ],
   },
   // ৬. Post Graduate Diploma
@@ -145,7 +198,10 @@ export const ACADEMIC_DROPDOWN_ITEMS = [
     label: "Post Graduate Diploma",
     path: "#",
     submenu: [
-      { label: "PGD in Library and Information Science", path: "/program/pgd-lis" },
+      {
+        label: "PGD in Library and Information Science",
+        path: "/academic/library-information-science/pgd-lis",
+      },
     ],
   },
 ];
@@ -153,7 +209,7 @@ export const MAIN_NAV_ITEMS = [
   { label: "HOME", path: "/" },
   { label: "ABOUT", type: "dropdown", items: ABOUT_DROPDOWN_ITEMS },
   { label: "ADMISSION", type: "dropdown", items: ADMISSION_DROPDOWN_ITEMS },
-  { label: "ACADEMIC",  type:"dropdown", items:ACADEMIC_DROPDOWN_ITEMS },
+  { label: "ACADEMIC", type: "dropdown", items: ACADEMIC_DROPDOWN_ITEMS },
   { label: "AUTHORITIES", type: "dropdown", items: AUTHORITIES_ITEMS },
   { label: "OFFICES", type: "dropdown", items: OFFICES_ITEMS },
   { label: "PEOPLE", type: "dropdown", items: PEOPLE_ITEMS },
